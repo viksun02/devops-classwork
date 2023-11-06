@@ -1,0 +1,15 @@
+name: python-docker-workflow
+on: 
+  push : 
+    branches: [ "main" ]
+env:
+  REGISTRY: docker.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the docker image
+      run: docker build -t docker-classwork .

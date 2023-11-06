@@ -18,3 +18,4 @@ jobs:
   
       with:
         push: true
+        tags: classwork-docker-latest

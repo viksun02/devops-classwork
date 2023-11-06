@@ -23,4 +23,4 @@ jobs:
       with:
         context: ./src
         push: true
-        tags: classwork-docker-latest
+        tags: viksun02/devops-classwork:latest
